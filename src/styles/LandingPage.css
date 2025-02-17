@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    margin-top: -50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.developer {
+    background-color: red;
+    transition: background-color 2s;
+}
+
+.photographer {
+    background-color: blue;
+    transition: background-color 2s;
+}
+
+.no-background {
+    background-color: white;
+    transition: background-color 2s;
+}
