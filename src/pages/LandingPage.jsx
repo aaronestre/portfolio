@@ -2,28 +2,19 @@ import {React, useState, useEffect} from "react";
 import "../styles/LandingPage.css"
 import Button from "../components/Button";
 
+import developer from "../assets/developer.jpg"
+import photographer from "../assets/photographer.jpg"
+import noBackground from "../assets/noBackground.jpg"
+
 export default function LandingPage() {
-
-    const [background, setBackground] = useState("Photographer");
-    const handleMouseEnter = (bg) => {
-        setBackground(bg);
-    }
-
-    const handleMouseLeave = () => {
-        setBackground("no-background");
-    }
-
-    useEffect(() => {
-        console.log("Background changed to:", background);
-    }, [background])
 
     return (
         <>
-            <div className={`hero ${background}`}>
+            <div className="hero">
                 <div className={`hero-container`}>
-                    <h1 className="hero-title">Hello I am <span className="name">Aaron</span>. I am an...</h1>
-                    <Button text="Aspiring Software Developer" onMouseEnter={() => handleMouseEnter("developer")} onMouseLeave={handleMouseLeave}/>
-                    <Button text="Amateur Art Creative" onMouseEnter={() => handleMouseEnter("photographer")} onMouseLeave={handleMouseLeave}/>
+                    <h1 className="hero-title">Hello my name's <span className="name">Aaron</span>. I am an...</h1>
+                    <Button className="button" text="Aspiring Software Developer"/>
+                    <Button className="button" text="Amateur Art Creative"/>
                 </div>
             </div>
         </>

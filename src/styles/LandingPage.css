@@ -5,8 +5,11 @@
 }
 
 .hero {
-    margin-top: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +17,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.developer {
-    background-color: red;
-    transition: background-color 2s;
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.photographer {
-    background-color: blue;
-    transition: background-color 2s;
+.name {
+    color: #ff4b2b;
+
 }
 
-.no-background {
-    background-color: white;
-    transition: background-color 2s;
+.hero-title {
+    color: white;
+    font-size: 4rem;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.75);
 }

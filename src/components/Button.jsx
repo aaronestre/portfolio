@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function Button({text, onMouseEnter, onMouseLeave}) {
+export default function Button({text, onMouseEnter, onMouseLeave, ...props}) {
     return (
         <>
             <button 
                 onMouseEnter={onMouseEnter} 
                 onMouseLeave={onMouseLeave}
-                className="button">
+                className="button"
+                {...props}>
                     {text}
             </button>
         </>
