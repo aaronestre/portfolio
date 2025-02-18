@@ -8,9 +8,8 @@ export default function LandingPage() {
         <>
             <div className="hero">
                 <div className={`hero-container`}>
-                    <h1 className="hero-title">Hello my name's <span className="name">Aaron</span>. I am an...</h1>
-                    <Button className="button" text="Aspiring Software Developer"/>
-                    <Button className="button" text="Amateur Art Creative"/>
+                    <h1 className="hero-title">Hello my name's <span className="highlight">Aaron</span></h1>
+                    <h2 className="hero-subtitle">I'm a  <span className="highlight">full stack</span> stack developer and  <span className="highlight">art</span> creative</h2>
                 </div>
             </div>
         </>
