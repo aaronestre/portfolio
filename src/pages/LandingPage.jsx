@@ -2,10 +2,6 @@ import {React, useState, useEffect} from "react";
 import "../styles/LandingPage.css"
 import Button from "../components/Button";
 
-import developer from "../assets/developer.jpg"
-import photographer from "../assets/photographer.jpg"
-import noBackground from "../assets/noBackground.jpg"
-
 export default function LandingPage() {
 
     return (
