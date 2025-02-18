@@ -3,6 +3,7 @@ import "../styles/LandingPage.css";
 
 import Button from "../components/Button";
 import headshot from "../assets/headshot.jpg";
+import artHeadshot from "../assets/artHeadshot.jpg";
 
 export default function LandingPage() {
     return (
@@ -53,6 +54,28 @@ export default function LandingPage() {
                             about tackling new challenges and contributing to
                             innovative projects that make a lasting impact.
                         </p>
+                    </div>
+                    <div className="about-content">
+                        <p className="about-text">
+                            As an artist, I am passionate about visual
+                            storytelling, whether through photography,
+                            videography, or design. My creative journey has
+                            allowed me to develop a keen eye for detail,
+                            composition, and the ability to capture moments that
+                            resonate with emotion. I enjoy experimenting with
+                            different mediums, blending traditional techniques
+                            with modern technology to bring my ideas to life. 
+                            Through my art, I aim to tell stories that inspire,
+                            connect, and engage, offering a fresh perspective on
+                            the world around us.
+                        </p>
+                        <img
+                            className="headshot"
+                            src={artHeadshot}
+                            alt="headshot"
+                            width="300"
+                            height="300"
+                        />
                     </div>
                 </div>
             </div>

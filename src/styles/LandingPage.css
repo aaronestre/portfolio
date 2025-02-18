@@ -120,7 +120,8 @@ Button.art:hover {
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.5;
-    color: var(--secondary-font-color)
+    color: var(--secondary-font-color);
+    min-width: 400px;
 }
 
 .headshot {
