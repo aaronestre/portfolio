@@ -11,6 +11,9 @@ export default function SWE() {
                     <h1 className="hero-title">
                         Hi, I'm Aaron, a <span className="swe">full stack</span> developer
                     </h1>
+                    <h2 className="hero-subtitle">
+                        Explore my <span className="swe">SWE</span> portfolio
+                    </h2>
                 </div>
                 <div className="cta-container">
                     <Button
