@@ -1,4 +1,5 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/LandingPage.css";
 
 import Button from "../components/Button";
@@ -6,6 +7,9 @@ import headshot from "../assets/headshot.jpg";
 import artHeadshot from "../assets/artHeadshot.jpg";
 
 export default function LandingPage() {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <div className="hero" id="hero">
@@ -23,6 +27,7 @@ export default function LandingPage() {
                         style={{ border: "2px solid #FF7043" }}
                         className="swe"
                         text="View My Software Engineering Portfolio"
+                        onClick={() => navigate("/swe")}
                     />
                     <Button
                         style={{ border: "2px solid #B39DDB" }}

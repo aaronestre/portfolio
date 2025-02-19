@@ -1,10 +1,11 @@
+import RouterSwitcher from "./components/RouterSwitcher"
 import LandingPage from "./pages/LandingPage"
 
 function App() {
 
   return (
     <>
-      <LandingPage />
+      <RouterSwitcher />
     </>
   )
 }
