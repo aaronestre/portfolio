@@ -1,8 +1,20 @@
-# React + Vite
+# Aaron Estrellado's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This site showcases my work as a **Software Engineer** and **Creative Artist**, featuring projects, technical skills, and artistic creations.
 
-Currently, two official plugins are available:
+## Live Site
+🔗 [aaronestrellado.vercel.app](https://aaronestrellado.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Preview
+
+![image](./src/assets/portfolioDemo.png)
+
+
+## Tech Stack
+- **Frontend**: React (Vite), React Router, Mantine UI
+- **Styling**: CSS Modules
+- **Deployment**: Vercel, GitHub Pages (in testing)
+
+## Contact Me
+- [LinkedIn](https://www.linkedin.com/in/aaronestrellado/)
+- aaron.estrellado@gmail.com
