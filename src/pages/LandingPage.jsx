@@ -33,6 +33,7 @@ export default function LandingPage() {
                         style={{ border: "2px solid #B39DDB" }}
                         className="art"
                         text="Explore My Art Portfolio"
+                        onClick={() => navigate("/art")}
                     />
                 </div>
             </div>
