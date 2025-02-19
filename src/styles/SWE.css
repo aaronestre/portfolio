@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --primary-font-color: #2C3E50;
+    --secondary-font-color: #687475;
+    --swe-color: #FF7043;
+    --highlight-color: #F9A825;
+    --art-color: #B39DDB;
+}
+
+.hero {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero-title {
+    color: var(--primary-font-color);
+    font-size: 4rem;
+}
+
+.resume {
+    color: var(--swe-color);
+}
+
+.github {
+    color: var(--highlight-color);
+}
+
+Button {
+    font-size: 1rem;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+Button.resume:hover {
+    background-color: var(--swe-color);
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+Button:hover::after {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+Button.github:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+    
+}
