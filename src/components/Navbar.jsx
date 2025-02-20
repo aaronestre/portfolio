@@ -30,7 +30,7 @@ export default function Navbar() {
                     { isSWEDropdownOpen && (
                         <DropdownMenu
                             className="dropdown-menu"
-                            links={["Overview", "View my projects"]}
+                            links={[{text: "Overview", href:"/"}, {text: "View my projects", href:"/swe"}]}
                         />
                     )}
                 </div>
@@ -43,17 +43,18 @@ export default function Navbar() {
                     {isArtDropdownOpen && (
                         <DropdownMenu
                             className="dropdown-menu"
-                            links={["Overview", "Explore my portfolio"]}
+                            links={[{text: "Overview", href:"/"}, {text: "Explore my portfolio", href:"/art"}]}
                         />
                     )}
                 </div>
                 <div className="link">
-                    <a href="#about">About</a>
+                    <a href="/#about">About</a>
                 </div>
                 <div className="link">
-                    <a href="#contact">Contact</a>
+                    <a href="/#contact">Contact</a>
                 </div>
             </nav>
         </div>
     );
 }
+
