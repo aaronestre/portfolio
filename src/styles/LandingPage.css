@@ -56,16 +56,17 @@
     gap: 1rem;
 }
 
-Button {
+.cta-container Button {
     font-size: 1rem;
     padding: 15px;
-    background-color: #fff;
     border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 8px 0 rgba( 31, 38, 135, 0.2 );
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
 
-Button.swe:hover {
+.cta-container Button.swe:hover {
     background-color: var(--swe-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
@@ -74,13 +75,13 @@ Button.swe:hover {
     
 }
 
-Button:hover::after {
+.cta-container Button:hover::after {
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
     transition: transform 0.2s ease-in-out;
 }
 
-Button.art:hover {
+.cta-container Button.art:hover {
     background-color: var(--art-color);
     color: #fff;
     -webkit-transform: translateY(-5px);

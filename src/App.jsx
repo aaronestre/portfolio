@@ -1,5 +1,5 @@
 import RouterSwitcher from "./components/RouterSwitcher"
-import Navbar from "./pages/Navbar"
+import Navbar from "./components/Navbar"
 
 function App() {
 

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --primary-font-color: #2c3e50;
+    --secondary-font-color: #687475;
+    --swe-color: #ff7043;
+    --highlight-color: #f9a825;
+    --art-color: #b39ddb;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 50%;
+    min-width: 150px;
+    min-height: 50px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 10px;
+}

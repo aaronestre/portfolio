@@ -1,5 +1,6 @@
 import { React } from "react";
 import { useNavigate } from "react-router-dom";
+import { Canvas } from "@react-three/fiber";
 import "../styles/LandingPage.css";
 
 import Button from "../components/Button";
@@ -7,7 +8,6 @@ import headshot from "../assets/headshot.jpg";
 import artHeadshot from "../assets/artHeadshot.jpg";
 
 export default function LandingPage() {
-
     const navigate = useNavigate();
 
     return (
@@ -70,7 +70,7 @@ export default function LandingPage() {
                             composition, and the ability to capture moments that
                             resonate with emotion. I enjoy experimenting with
                             different mediums, blending traditional techniques
-                            with modern technology to bring my ideas to life. 
+                            with modern technology to bring my ideas to life.
                             Through my art, I aim to tell stories that inspire,
                             connect, and engage, offering a fresh perspective on
                             the world around us.

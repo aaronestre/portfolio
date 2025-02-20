@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 
 import "../styles/Navbar.css";
-import Button from "../components/Button";
-import DropdownMenu from "../components/DropdownMenu";
+import Button from "./Button";
+import DropdownMenu from "./DropdownMenu";
 import useNavbar from "../hooks/useNavbar";
 
 export default function Navbar() {
@@ -27,12 +27,10 @@ export default function Navbar() {
                     onMouseLeave={handleSWELeave}
                 >
                     <Button text="SWE" />
-                    {isSWEDropdownOpen && (
+                    { isSWEDropdownOpen && (
                         <DropdownMenu
                             className="dropdown-menu"
                             links={["Overview", "View my projects"]}
-                            onMouseEnter={handleSWEEnter}
-                            onMouseLeave={handleSWELeave}
                         />
                     )}
                 </div>
@@ -46,8 +44,6 @@ export default function Navbar() {
                         <DropdownMenu
                             className="dropdown-menu"
                             links={["Overview", "Explore my portfolio"]}
-                            onMouseEnter={handleArtEnter}
-                            onMouseLeave={handleArtLeave}
                         />
                     )}
                 </div>
