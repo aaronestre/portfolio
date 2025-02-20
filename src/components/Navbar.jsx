@@ -48,7 +48,10 @@ export default function Navbar() {
                     )}
                 </div>
                 <div className="link">
-                    <a>Contact</a>
+                    <a href="#about">About</a>
+                </div>
+                <div className="link">
+                    <a href="#contact">Contact</a>
                 </div>
             </nav>
         </div>
