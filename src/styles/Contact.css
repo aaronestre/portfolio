@@ -64,7 +64,8 @@
     border-radius: 15px;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    width: 15%;
+    max-width: 500px;
+    width: 100%;
 }
 
 .contact-button:hover {
