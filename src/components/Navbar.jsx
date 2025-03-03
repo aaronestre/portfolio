@@ -30,7 +30,7 @@ export default function Navbar() {
                     { isSWEDropdownOpen && (
                         <DropdownMenu
                             className="dropdown-menu"
-                            links={[{text: "Overview", href:"/"}, {text: "View my projects", href:"/swe"}]}
+                            links={[{text: "Overview", href:"/#swe-overview"}, {text: "View my projects", href:"/swe"}]}
                         />
                     )}
                 </div>

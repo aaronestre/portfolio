@@ -5,6 +5,7 @@ import "../styles/LandingPage.css";
 import Hero from "../components/LandingPage/Hero";
 import About from "../components/LandingPage/About";
 import Contact from "../components/LandingPage/Contact";
+import SWESkills from "../components/LandingPage/SWESkills";
 
 export default function LandingPage() {
 
@@ -12,6 +13,7 @@ export default function LandingPage() {
         <>
             <Hero />
             <About />
+            <SWESkills />
             <Contact />
         </>
     );
