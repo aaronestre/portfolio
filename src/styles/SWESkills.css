@@ -52,16 +52,32 @@ html {
     align-items: center;
     gap: 10px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.swe-skills-content:hover {
+    box-shadow: 0 0 32px 0 var(--swe-color);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.swe-skills-content:hover::after {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .swe-skills-content h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .skill-image {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
 }
 
 .swe-project-container {
@@ -104,6 +120,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 0;
 }
 
 .swe-project-cta Button {

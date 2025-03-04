@@ -49,7 +49,7 @@ function SWESkills() {
                         Web application that helps users learn Tagalog through
                         AI-powered tutoring and vocabulary flashcards.
                     </p>
-                    <div className="swe-project-cta">
+                    <div className="swe-project-cta cta-container">
                         <a
                             href="https://tagalong-ten.vercel.app/"
                             target="_blank"
