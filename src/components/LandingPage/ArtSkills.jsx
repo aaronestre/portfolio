@@ -47,7 +47,7 @@ function ArtSkills() {
                     <h2>Lightroom</h2>
                 </div>
             </div>
-            <h2>Featured Projects</h2>
+            <h2>Featured Pieces</h2>
             <div className="art-project-container">
                 <ArtImg
                     className="art-project-image"
