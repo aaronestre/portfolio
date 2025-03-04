@@ -61,14 +61,6 @@ html {
     box-shadow: 0 0 32px 0 var(--swe-color);
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.swe-skills-content:hover::after {
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .swe-skills-content h2 {
@@ -149,21 +141,11 @@ a {
     color: #fff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
-    
 }
 
 .cta-container Button.project:hover {
     background-color: var(--highlight-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
-    
-}
-
-.cta-container Button:hover::after {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    transition: transform 0.2s ease-in-out;
+    transform: translateY(-5px);    
 }

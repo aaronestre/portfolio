@@ -58,14 +58,7 @@ Button.resume:hover {
     color: #fff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
     
-}
-
-Button:hover::after {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    transition: transform 0.2s ease-in-out;
 }
 
 Button.github:hover {
@@ -73,6 +66,5 @@ Button.github:hover {
     color: #fff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
     
 }

@@ -57,22 +57,12 @@ Button.resume:hover {
     background-color: var(--swe-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
-    
-}
-
-Button:hover::after {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    transition: transform 0.2s ease-in-out;
+    transform: translateY(-5px);    
 }
 
 Button.github:hover {
     background-color: var(--highlight-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    transition: transform 0.2s ease-in-out;
-    
+    transform: translateY(-5px);    
 }
