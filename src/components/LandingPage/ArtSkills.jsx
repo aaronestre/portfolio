@@ -47,6 +47,7 @@ function ArtSkills() {
                     <h2>Lightroom</h2>
                 </div>
             </div>
+            <h2>Featured Projects</h2>
             <div className="art-project-container">
                 <ArtImg
                     className="art-project-image"
@@ -57,17 +58,17 @@ function ArtSkills() {
                 <img
                     className="art-project-image"
                     src="/images/photo/bird.jpg"
-                    alt="New York Skyline"
+                    alt="Bird"
                 />
                 <img
                     className="art-project-image"
                     src="/images/photo/golf_winter.jpg"
-                    alt="New York Skyline"
+                    alt="Golf Course during Winter"
                 />
                 <img
                     className="art-project-image"
-                    src="/images/photo/dtj_undaunted.jpg"
-                    alt="New York Skyline"
+                    src="/images/photo/sunflower.png"
+                    alt="Sunflower"
                 />
             </div>
             <div className="cta-container">
