@@ -43,7 +43,7 @@ export default function Navbar() {
                     {isArtDropdownOpen && (
                         <DropdownMenu
                             className="dropdown-menu"
-                            links={[{text: "Overview", href:"/"}, {text: "Explore my portfolio", href:"/art"}]}
+                            links={[{text: "Overview", href:"/#art-overview"}, {text: "Explore my portfolio", href:"/art"}]}
                         />
                     )}
                 </div>
