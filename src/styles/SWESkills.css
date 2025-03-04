@@ -7,6 +7,8 @@
     --secondary-font-color: #687475;
     --swe-color: #FF7043;
     --art-color: #B39DDB;
+    --highlight-color: #F9A825;
+
 }
 
 html {
@@ -67,10 +69,14 @@ html {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 6rem;
+    height: 400px;
     margin: 50px;
     width: 70%;
     padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    border-radius: 20px;
 }
 
 .swe-project-image {
@@ -88,18 +94,38 @@ html {
     line-height: 1.5rem;
 }
 
-.cta-container Button {
+.swe-project-info p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.swe-project-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.swe-project-cta Button {
+    color: var(--highlight-color);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ Button {
     font-size: 1rem;
     padding: 15px;
     border-radius: 15px;
     border: 2px solid var(--swe-color);
     backdrop-filter: blur(20px);
-    box-shadow: 0 8px 8px 0 rgba( 31, 38, 135, 0.2 );
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
 
-.cta-container Button.swe:hover {
+ Button.swe:hover {
     background-color: var(--swe-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
@@ -108,17 +134,17 @@ html {
     
 }
 
-.cta-container Button:hover::after {
-    -webkit-transform: translateY(5px);
-    transform: translateY(5px);
-    transition: transform 0.2s ease-in-out;
-}
-
-.cta-container Button.art:hover {
-    background-color: var(--art-color);
+Button.project:hover {
+    background-color: var(--highlight-color);
     color: #fff;
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     transition: transform 0.2s ease-in-out;
     
+}
+
+ Button:hover::after {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
 }

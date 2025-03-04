@@ -3,7 +3,6 @@ import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 
 function SWESkills() {
-
     const navigate = useNavigate();
 
     return (
@@ -47,14 +46,42 @@ function SWESkills() {
                 <div className="swe-project-info">
                     <h1 className="swe">Tagalong</h1>
                     <p>
-                        Web application that helps users learn
-                        Tagalog through AI-powered tutoring and vocabulary
-                        flashcards.
+                        Web application that helps users learn Tagalog through
+                        AI-powered tutoring and vocabulary flashcards.
                     </p>
+                    <div className="swe-project-cta">
+                        <a
+                            href="https://tagalong-ten.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button
+                                style={{ border: "2px solid #F9A825" }}
+                                className="project"
+                                text={"Live Demo"}
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/aaronestre/tagalong"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Button
+                                style={{ border: "2px solid #F9A825" }}
+                                className="project"
+                                text={"GitHub"}
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="cta-container">
-                <Button text={"View my other projects"} className="swe" onClick={() => navigate("/swe")} />
+                <Button
+                    style={{ border: "2px solid #FF7043" }}
+                    text={"View my other projects"}
+                    className="swe"
+                    onClick={() => navigate("/swe")}
+                />
             </div>
         </div>
     );
