@@ -37,6 +37,7 @@ function SWESkills() {
                     <h2>C#</h2>
                 </div>
             </div>
+            <h2>Featured Project</h2>
             <div className="swe-project-container">
                 <img
                     className="swe-project-image"
