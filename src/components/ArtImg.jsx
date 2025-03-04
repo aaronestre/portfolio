@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../styles/ArtImg.css";
 const ArtImg = ({text, ...props}) => {
 
     const [isHovered, setIsHovered] = useState(false);
@@ -12,7 +13,10 @@ const ArtImg = ({text, ...props}) => {
     }
 
     return (
-        <img {...props} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+        <div className="art-container" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <img className="art-image" {...props} />
+            {isHovered && <p className="art-text">{text}</p>}
+        </div>
     )
 }
 

@@ -50,25 +50,24 @@ function ArtSkills() {
             <h2>Featured Pieces</h2>
             <div className="art-project-container">
                 <ArtImg
-                    className="art-project-image"
                     src="/images/photo/ny_skyline.jpg"
                     alt="New York Skyline"
-                    text="New York Skyline"
+                    text="New York City, NY"
                 />
-                <img
-                    className="art-project-image"
+                <ArtImg
                     src="/images/photo/bird.jpg"
                     alt="Bird"
+                    text="Gainesville, FL"
                 />
-                <img
-                    className="art-project-image"
+                <ArtImg
                     src="/images/photo/golf_winter.jpg"
                     alt="Golf Course during Winter"
+                    text="Gainesville, VA"
                 />
-                <img
-                    className="art-project-image"
+                <ArtImg
                     src="/images/photo/sunflower.png"
                     alt="Sunflower"
+                    text="Gainesville, FL"
                 />
             </div>
             <div className="cta-container">

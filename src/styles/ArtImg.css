@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.art-container {
+    position: relative;
+}
+
+.art-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.art-image {
+    display: block;
+    height: 300px;
+    max-width: 500px;
+    border-radius: 5px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.art-container:hover .art-image {
+    filter: brightness(0.4);
+}
+
+.art-container:hover .art-text {
+    opacity: 1;
+}
