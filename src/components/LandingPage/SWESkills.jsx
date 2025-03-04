@@ -76,6 +76,7 @@ function SWESkills() {
                 </div>
             </div>
             <div className="cta-container">
+                <h3>Want to learn more?</h3>
                 <Button
                     style={{ border: "2px solid #FF7043" }}
                     text={"View my other projects"}
