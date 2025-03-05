@@ -1,0 +1,19 @@
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button.swe:hover {
+    background-color: var(--swe-color);
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+button.art:hover {
+    background-color: var(--art-color);
+    color: #fff;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);    
+}
