@@ -1,30 +1,35 @@
 import React from "react";
 import Button from "../components/Button";
 
-import "../styles/SWE.css";
-
 export default function SWE() {
     return (
         <>
-            <div className="hero" id="hero">
-                <div className={`hero-container`}>
-                    <h1 className="hero-title">
-                        Hi, I'm Aaron, a <span className="swe">full stack</span> developer
+            <div
+                className="top-0 left-0 h-dvh flex flex-col justify-center items-center"
+                id="hero"
+            >
+                <div className="flex flex-col justify-center items-center text-center mx-auto my-0 px-0 py-4">
+                    <h1 className="text-(--primary-font-color) text-6xl m-5">
+                        Hello, I'm Aaron, a{" "}
+                        <span className="text-(--swe-color)">full stack</span>{" "}
+                        developer.
                     </h1>
-                    <h2 className="hero-subtitle">
-                        Explore my <span className="swe">SWE</span> portfolio
+                    <h2 className="text-(--primary-font-color) text-3xl">
+                        Explore my{" "}
+                        <span className="text-(--swe-color)">SWE</span>{" "}
+                        portfolio
                     </h2>
                 </div>
-                <div className="cta-container">
+                <div className="m-4 flex justify-center items-center gap-4">
                     <Button
                         style={{ border: "2px solid #FF7043" }}
-                        className="resume button"
-                        text="Download my Resume"
+                        className="swe text-(--swe-color)"
+                        text="View my Resume"
                     />
                     <Button
-                        style={{ border: "2px solid #F9A825" }}
-                        className="github button"
-                        text="Checkout my GitHub"
+                        style={{ border: "2px solid #B39DDB" }}
+                        className="art text-(--art-color)"
+                        text="Explore my GitHub"
                     />
                 </div>
             </div>
