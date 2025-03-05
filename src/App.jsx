@@ -2,6 +2,8 @@ import RouterSwitcher from "./components/RouterSwitcher"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 
+import "./styles/global.css"
+
 function App() {
 
   return (

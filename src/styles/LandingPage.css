@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 
-    --primary-font-color: #2C3E50;
-    --secondary-font-color: #687475;
-    --swe-color: #FF7043;
-    --art-color: #B39DDB;
 }
 
 .hero {

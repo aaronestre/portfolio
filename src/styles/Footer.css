@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    --primary-font-color: #2c3e50;
-    --secondary-font-color: #687475;
-    --swe-color: #ff7043;
-    --highlight-color: #f9a825;
-    --art-color: #b39ddb;
-    --background-color: #F4F4F4;
 }
 
 .footer {
