@@ -16,7 +16,7 @@ function SWESkills() {
                 <SkillContainer src="/images/java.png" alt="Java" text="Java" />
                 <SkillContainer src="/images/csharp.png" alt="C#" text="C#" />
             </div>
-            <h2 className="text-2xl">Featured Project</h2>
+            <h2 className="text-4xl">Featured Project</h2>
             <div className="flex justify-center items-center flex-wrap gap-15 h-[400px] w-7/10 m-14 mt-5 p-5 shadow-2xl rounded-2xl">
                 <img
                     className="h-[300px] w-[500px] rounded-xl"
@@ -56,7 +56,7 @@ function SWESkills() {
                 </div>
             </div>
             <div className="flex justify-center items-center gap-8">
-                <h3>Want to learn more?</h3>
+                <h3 className="text-xl">Want to learn more?</h3>
                 <Button
                     style={{ border: "2px solid #FF7043" }}
                     text={"View my other projects"}

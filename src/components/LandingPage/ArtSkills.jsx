@@ -18,7 +18,7 @@ function ArtSkills() {
                 <SkillContainer src="/images/ae.png" alt="After Effects" text="After Effects" />
                 <SkillContainer src="/images/lightroom.png" alt="Lightroom" text="Lightroom" />
             </div>
-            <h2 className="text-2xl">Featured Pieces</h2>
+            <h2 className="text-4xl">Featured Pieces</h2>
             <div className="flex justify-evenly items-center flex-wrap h-[750px] w-7.5/10 m-14 mt-5 p-5 shadow-2xl rounded-2xl">
                 <ArtImg
                     src="/images/photo/ny_skyline.jpg"
@@ -42,7 +42,7 @@ function ArtSkills() {
                 />
             </div>
             <div className="flex justify-center items-center gap-8">
-                <h3>Want to see more?</h3>
+                <h3 className="text-xl">Want to see more?</h3>
                 <Button
                     style={{ border: "2px solid #B39DDB" }}
                     text={"Explore my Art Portfolio"}
