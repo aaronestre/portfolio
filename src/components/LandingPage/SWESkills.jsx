@@ -1,4 +1,3 @@
-import "../../styles/SWESkills.css";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import SkillContainer from "../SkillContainer";
