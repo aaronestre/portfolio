@@ -17,6 +17,9 @@
     --background-color: #f4f4f4; /* Light Gray for main background */
     --card-background: #ffffff; /* White for content cards */
     --border-color: #e0e0e0; /* Soft Gray for subtle separation */
+
+    --header-font: "Roboto";
+    --secondary-font: "Open Sans";
 }
 
 h1 {

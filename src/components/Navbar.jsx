@@ -1,60 +1,29 @@
-import { React, useState } from "react";
+import { React } from "react";
 
-import "../styles/Navbar.css";
-import Button from "./Button";
-import DropdownMenu from "./DropdownMenu";
-import useNavbar from "../hooks/useNavbar";
+import NavLink from "./NavLink";
+import NavDropdown from "./NavDropDown";
 
 export default function Navbar() {
-    const {
-        isSWEDropdownOpen,
-        isArtDropdownOpen,
-        handleSWEEnter,
-        handleSWELeave,
-        handleArtEnter,
-        handleArtLeave,
-    } = useNavbar();
+    
+    const sweLinks= [
+        { text: "Overview", href: "/#swe-overview" },
+        { text: "View my projects", href: "/swe" },
+    ];
+
+    const artLinks = [
+        { text: "Overview", href: "/#art-overview" },
+        { text: "Explore my portfolio", href: "/art" },
+    ];
 
     return (
-        <div className="navbar">
-            <nav className="nav-links">
-                <div className="link">
-                    <a href="/">Home</a>
-                </div>
-                <div
-                    className="link"
-                    onMouseEnter={handleSWEEnter}
-                    onMouseLeave={handleSWELeave}
-                >
-                    <Button text="SWE" />
-                    { isSWEDropdownOpen && (
-                        <DropdownMenu
-                            className="dropdown-menu"
-                            links={[{text: "Overview", href:"/#swe-overview"}, {text: "View my projects", href:"/swe"}]}
-                        />
-                    )}
-                </div>
-                <div
-                    className="link"
-                    onMouseEnter={handleArtEnter}
-                    onMouseLeave={handleArtLeave}
-                >
-                    <Button text="Art" />
-                    {isArtDropdownOpen && (
-                        <DropdownMenu
-                            className="dropdown-menu"
-                            links={[{text: "Overview", href:"/#art-overview"}, {text: "Explore my portfolio", href:"/art"}]}
-                        />
-                    )}
-                </div>
-                <div className="link">
-                    <a href="/#about">About</a>
-                </div>
-                <div className="link">
-                    <a href="/#contact">Contact</a>
-                </div>
+        <div className="sticky top-0 mx-auto h-13 my-4 flex justify-center items-center rounded-2xl min-w-[410px] font-(family-name:--secondary-font) w-3/10 shadow-2xl bg-white z-1 border-1 border-gray-400/15 border-solid">
+            <nav className="w-full flex justify-center items-center gap-4">
+                <NavLink href="/" text="Home" />
+                <NavDropdown links={sweLinks} text="SWE"/>
+                <NavDropdown links={artLinks} text="Art"/>
+                <NavLink href="/#about" text="About" />
+                <NavLink href="/#contact" text="Contact" />
             </nav>
         </div>
     );
 }
-
