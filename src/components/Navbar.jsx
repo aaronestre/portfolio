@@ -1,7 +1,7 @@
 import { React } from "react";
 
 import NavLink from "./NavLink";
-import NavDropdown from "./NavDropDown";
+import NavDropdown from "./NavDropdown";
 
 export default function Navbar() {
     
