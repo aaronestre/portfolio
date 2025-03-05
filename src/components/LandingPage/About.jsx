@@ -4,17 +4,17 @@ import artHeadshot from "../../assets/artHeadshot.jpg";
 function About() {
     return (
         <div className="about" id="about">
-            <div className="about-container">
-                <h1 className="about-title">About</h1>
-                <div className="about-content">
+            <div className="mx-auto my-8 flex flex-col justify-center items-center text-center w-4/5 font-(family-name:--primary-font)">
+                <h1 className="text-6xl">About</h1>
+                <div className="flex justify-center items-center gap-20 h-80 m-14 mt-8">
                     <img
-                        className="headshot"
+                        className="rounded-xl shadow-2xl"
                         src={headshot}
                         alt="headshot"
                         width="300"
                         height="300"
                     />
-                    <p className="about-text">
+                    <p className="font-(family-name:--secondary-font) w-2/5 text-left text-xl leading-normal text-(--secondary-font-color) min-w-md">
                         As a recent Computer Science graduate from the
                         University of Florida, I specialize in full-stack
                         development, user experience, and game development. My
@@ -26,8 +26,8 @@ function About() {
                         make a lasting impact.
                     </p>
                 </div>
-                <div className="about-content">
-                    <p className="about-text">
+                <div className="flex justify-center items-center gap-20 h-80 m-14 mt-8">
+                    <p className="font-(family-name:--secondary-font) w-2/5 text-left text-xl leading-normal text-(--secondary-font-color) min-w-md">
                         As an artist, I am passionate about visual storytelling,
                         whether through photography, videography, or design. My
                         creative journey has allowed me to develop a keen eye
@@ -40,7 +40,7 @@ function About() {
                         perspective on the world around us.
                     </p>
                     <img
-                        className="headshot"
+                        className="rounded-xl shadow-2xl"
                         src={artHeadshot}
                         alt="headshot"
                         width="300"
