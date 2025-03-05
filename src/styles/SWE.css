@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .hero {
     top: 0;
     left: 0;
@@ -36,15 +30,6 @@
 
 .github {
     color: var(--highlight-color);
-}
-
-Button {
-    font-size: 1rem;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
 }
 
 Button.resume:hover {

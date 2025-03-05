@@ -1,15 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html {
-    font-family: 'Roboto', sans-serif;
-    color: var(--primary-font-color);
-}
-
 .art-overview-title {
     font-size: 4rem;
     color: var(--art-color)
@@ -82,21 +70,4 @@ html {
 
 a {
     text-decoration: none;
-}
-
- .cta-container Button {
-    font-size: 1rem;
-    padding: 15px;
-    border-radius: 15px;
-    border: 2px solid var(--art-color);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.cta-container Button.art:hover {
-    background-color: var(--art-color);
-    color: #fff;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    
 }

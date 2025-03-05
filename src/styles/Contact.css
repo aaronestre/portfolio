@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .contact {
     width: 80%;
     margin: 0 auto;
@@ -48,22 +42,4 @@
 .contact-form textarea {
     resize: none;
     height: 150px;
-}
-
-.contact-button {
-    color: var(--highlight-color);
-    font-size: 1rem;
-    padding: 15px;
-    background-color: #fff;
-    border: 2px solid var(--highlight-color);
-    border-radius: 15px;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    max-width: 500px;
-    width: 100%;
-}
-
-.contact-button:hover {
-    background-color: var(--highlight-color);
-    color: #fff;
 }
