@@ -4,7 +4,7 @@ import artHeadshot from "../../assets/artHeadshot.jpg";
 function About() {
     return (
         <div className="about" id="about">
-            <div className="mx-auto my-8 flex flex-col justify-center items-center text-center w-4/5 font-(family-name:--primary-font)">
+            <div className="mx-auto my-8 flex flex-col justify-center items-center text-center w-3/5 font-(family-name:--primary-font)">
                 <h1 className="text-4xl md:text-6xl text-(--primary-font-color) text-center">About</h1>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-20 h-auto mt-8">
                     <img
