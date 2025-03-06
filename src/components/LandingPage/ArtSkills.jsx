@@ -48,6 +48,7 @@ function ArtSkills() {
                 <Button
                     style={{ border: "2px solid #B39DDB" }}
                     text={"Explore my Art Portfolio"}
+                    type="art"
                     className="art text-(--art-color)"
                     onClick={() => navigate("/art")}
                 />

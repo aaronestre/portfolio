@@ -21,12 +21,14 @@ function Hero() {
                     style={{ border: "2px solid #FF7043" }}
                     className="swe text-(--swe-color)"
                     text="View My Software Engineering Portfolio"
+                    type="swe"
                     onClick={() => navigate("/swe")}
                 />
                 <Button
                     style={{ border: "2px solid #B39DDB" }}
                     className="art text-(--art-color)"
                     text="Explore My Art Portfolio"
+                    type="art"
                     onClick={() => navigate("/art")}
                 />
             </div>
