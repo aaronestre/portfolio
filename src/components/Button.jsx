@@ -16,7 +16,7 @@ export default function Button({ text, type, className = "", ...props }) {
         <>
             <motion.button
                 className={`box-content text-base p-3 rounded-xl w-max shadow-xl font-semibold ${className}`}
-                whileHover={{ backgroundColor: getColor(), scale: 1.05, color: "white" }}
+                whileHover={{ backgroundColor: getColor(), scale: 1.05, color: "rgb(255, 255, 255)" }}
                 whileTap={{ scale: 0.95 }}
                 {...props}
             >
