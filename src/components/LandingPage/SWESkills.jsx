@@ -19,7 +19,7 @@ function SWESkills() {
                 Building scalable, efficient, and user-friendly applications
             </h4>
             <SkillsContainer skills={skills} />
-            <h2 className="text-3xl md:text-4xl mt-12">Featured Project</h2>
+            <h2 className="text-3xl md:text-4xl mt-12 text-(--primary-font-color)">Featured Project</h2>
             <div className="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-6 lg:gap-10 h-auto w-full md:w-4/5 mx-auto my-0 p-5 shadow-xl rounded-2xl">
                 <img
                     className="h-auto w-full sm:w-[80%] md:w-[70%] lg:w-[50%] rounded-xl"
@@ -27,7 +27,7 @@ function SWESkills() {
                     alt="Tagalong website"
                 />
                 <div className="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex flex-col justify-center items-center gap-6 text-center lg:text-left leading-normal">
-                    <h1 className="text-xl sm:text-2xl mb-[-10px]">Tagalong</h1>
+                    <h1 className="text-xl sm:text-2xl mb-[-10px] text-(--primary-font-color)">Tagalong</h1>
                     <p className="text-(--secondary-font-color) font-(family-name:--secondary-font)">
                         Web application that helps users learn Tagalog through
                         AI-powered tutoring and vocabulary flashcards.
@@ -59,7 +59,7 @@ function SWESkills() {
                 </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-8">
-                <h3 className="text-lg sm:text-xl text-center sm:text-left">Want to learn more?</h3>
+                <h3 className="text-lg sm:text-xl text-center sm:text-left text-(--primary-font-color)">Want to learn more?</h3>
                 <Button
                     style={{ border: "2px solid #FF7043" }}
                     text={"View my other projects"}

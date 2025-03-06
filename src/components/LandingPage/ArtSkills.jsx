@@ -20,7 +20,7 @@ function ArtSkills() {
                 Creating inspiring and engaging pieces of art
             </h4>
             <SkillsContainer skills={skills} />
-            <h2 className="text-3xl md:text-4xl mt-12">Featured Pieces</h2>
+            <h2 className="text-3xl md:text-4xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-8 w-full max-w-7xl mt-5 shadow-2xl rounded-2xl">
                 <ArtImg
                     src="/images/photo/ny_skyline.jpg"
@@ -44,7 +44,7 @@ function ArtSkills() {
                 />
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
-                <h3 className="text-lg md:text-xl text-center">Want to see more?</h3>
+                <h3 className="text-lg md:text-xl text-center text-(--primary-font-color)">Want to see more?</h3>
                 <Button
                     style={{ border: "2px solid #B39DDB" }}
                     text={"Explore my Art Portfolio"}
