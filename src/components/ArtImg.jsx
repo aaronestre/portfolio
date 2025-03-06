@@ -2,15 +2,19 @@ import { motion } from "motion/react";
 const ArtImg = ({ text, ...props }) => {
 
     const variants = {
-        opacity: {opacity: 1},
+        hover: {opacity: 1},
+    }
+
+    const imgVariant = {
+        hover: {filter: "brightness(0.4)"},
     }
 
     return (
-        <motion.div whileHover="opacity"className="art-container relative">
+        <motion.div whileHover="hover" className="art-container relative">
             <motion.img
                 className="block w-full h-auto aspect-[3/2] rounded-lg"
                 {...props}
-                whileHover={{ filter: "brightness(0.4)"}}
+                variants={imgVariant}
             />
             <motion.p
                 className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base sm:text-lg md:text-xl text-center opacity-0"
