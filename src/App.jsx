@@ -1,5 +1,5 @@
 import RouterSwitcher from "./components/RouterSwitcher"
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer"
 
 import "./styles/global.css"

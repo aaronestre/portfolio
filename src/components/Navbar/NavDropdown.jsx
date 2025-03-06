@@ -1,5 +1,5 @@
 import DropdownMenu from "./DropdownMenu";
-import useDropdown from "../hooks/useDropdown";
+import useDropdown from "../../hooks/useDropdown";
 
 const NavDropdown = ({ links, text }) => {
 

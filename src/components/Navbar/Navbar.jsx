@@ -16,7 +16,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="sticky top-0 mx-auto h-13 my-4 flex justify-center items-center rounded-2xl min-w-[410px] font-(family-name:--secondary-font) w-3/10 shadow-2xl bg-white z-1 border-1 border-gray-400/15 border-solid">
+        <div className="sticky top-0 mx-auto h-13 my-4 flex justify-center items-center rounded-2xl min-w-[410px] font-(family-name:--secondary-font) w-3/10 shadow-2xl bg-white z-1 border-2 border-gray-400/50 border-solid">
             <nav className="w-full flex justify-center items-center gap-4">
                 <NavLink href="/" text="Home" />
                 <NavDropdown links={sweLinks} text="SWE"/>
