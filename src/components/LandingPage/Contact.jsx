@@ -12,7 +12,7 @@ function Contact() {
             className="w-2/5 mx-auto my-40 flex flex-col justify-center items-center text-center mb-8"
             id="contact"
         >
-            <h1 className="text-6xl text-(--primary-font-color)">Contact</h1>
+            <h1 className="text-4xl md:text-6xl text-(--primary-font-color) text-center">Contact</h1>
             <form
                 className="mt-8 flex flex-col gap-4 justify-center items-center text-center w-full font-(--family-name:--primary-font)"
                 onSubmit={handleSubmit}

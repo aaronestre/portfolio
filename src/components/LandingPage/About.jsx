@@ -5,16 +5,16 @@ function About() {
     return (
         <div className="about" id="about">
             <div className="mx-auto my-8 flex flex-col justify-center items-center text-center w-4/5 font-(family-name:--primary-font)">
-                <h1 className="text-6xl">About</h1>
-                <div className="flex justify-center items-center gap-20 h-80 m-14 mt-8">
+                <h1 className="text-4xl md:text-6xl text-(--primary-font-color) text-center">About</h1>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-10 sm:gap-20 h-auto mt-8">
                     <img
-                        className="rounded-xl shadow-2xl"
+                        className="rounded-xl shadow-2xl w-full max-w-[250px] sm:max-w-[300px] h-auto"
                         src={headshot}
                         alt="headshot"
                         width="300"
                         height="300"
                     />
-                    <p className="font-(family-name:--secondary-font) w-2/5 text-left text-xl leading-normal text-(--secondary-font-color) min-w-md">
+                    <p className="w-full sm:w-3/5 text-left text-lg sm:text-xl leading-normal text-(--secondary-font-color)">
                         As a recent Computer Science graduate from the
                         University of Florida, I specialize in full-stack
                         development, user experience, and game development. My
@@ -26,8 +26,8 @@ function About() {
                         make a lasting impact.
                     </p>
                 </div>
-                <div className="flex justify-center items-center gap-20 h-80 m-14 mt-8">
-                    <p className="font-(family-name:--secondary-font) w-2/5 text-left text-xl leading-normal text-(--secondary-font-color) min-w-md">
+                <div className="flex flex-col-reverse sm:flex-row justify-center items-center gap-10 sm:gap-20 h-auto mt-8">
+                    <p className="w-full sm:w-3/5 text-left text-lg sm:text-xl leading-normal text-(--secondary-font-color)">
                         As an artist, I am passionate about visual storytelling,
                         whether through photography, videography, or design. My
                         creative journey has allowed me to develop a keen eye
@@ -40,7 +40,7 @@ function About() {
                         perspective on the world around us.
                     </p>
                     <img
-                        className="rounded-xl shadow-2xl"
+                        className="rounded-xl shadow-2xl w-full max-w-[250px] sm:max-w-[300px] h-auto"
                         src={artHeadshot}
                         alt="headshot"
                         width="300"
