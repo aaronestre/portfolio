@@ -1,9 +1,16 @@
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
-import SkillContainer from "../SkillContainer";
+import SkillsContainer from "./SkillsContainer";
+import Skill from "../Skill";
 
 function SWESkills() {
     const navigate = useNavigate();
+
+    const skills = [
+        { src: "/images/react.png", alt: "React", text: "React" },
+        { src: "/images/java.png", alt: "Java", text: "Java" },
+        { src: "/images/csharp.png", alt: "C#", text: "C#" },
+    ]
 
     return (
         <div className="flex flex-col justify-center items-center w-4/5 mx-auto my-40" id="swe-overview">
@@ -11,11 +18,7 @@ function SWESkills() {
             <h4 className="text-xl">
                 Building scalable, efficient, and user-friendly applications
             </h4>
-            <div className="flex justify-center items-center flex-wrap gap-8 m-14 w-1/2 mb-28">
-                <SkillContainer src="/images/react.png" alt="React" text="React" />
-                <SkillContainer src="/images/java.png" alt="Java" text="Java" />
-                <SkillContainer src="/images/csharp.png" alt="C#" text="C#" />
-            </div>
+            <SkillsContainer skills={skills} />
             <h2 className="text-4xl">Featured Project</h2>
             <div className="flex justify-center items-center flex-wrap gap-15 h-[400px] w-7/10 m-14 mt-5 p-5 shadow-2xl rounded-2xl">
                 <img

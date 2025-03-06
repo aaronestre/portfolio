@@ -1,25 +1,27 @@
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
-import SkillContainer from "../SkillContainer";
+import SkillsContainer from "./SkillsContainer";
 import ArtImg from "../ArtImg";
 
 function ArtSkills() {
     const navigate = useNavigate();
 
+    const skills = [
+        { src: "/images/photoshop.png", alt: "Photoshop", text: "Photoshop" },
+        { src: "/images/premiere.png", alt: "Premiere Pro", text: "Premiere Pro" },
+        { src: "/images/ae.png", alt: "After Effects", text: "After Effects" },
+        { src: "/images/lightroom.png", alt: "Lightroom", text: "Lightroom" },
+    ]
+
     return (
-        <div className="flex flex-col justify-center items-center w-4/5 mx-auto my-40" id="art-overview">
-            <h1 className="text-6xl text-(--art-color)">Art Creative</h1>
-            <h4 className="text-xl">
+        <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="art-overview">
+            <h1 className="text-4xl md:text-6xl text-(--art-color) text-center">Art Creative</h1>
+            <h4 className="text-lg md:text-xl text-center text-(--primary-font-color)">
                 Creating inspiring and engaging pieces of art
             </h4>
-            <div className="flex justify-center items-center flex-wrap gap-8 m-14 w-[55%] mb-28">
-                <SkillContainer src="/images/photoshop.png" alt="Photoshop" text="Photoshop" />
-                <SkillContainer src="/images/premiere.png" alt="Premiere Pro" text="Premiere Pro" />
-                <SkillContainer src="/images/ae.png" alt="After Effects" text="After Effects" />
-                <SkillContainer src="/images/lightroom.png" alt="Lightroom" text="Lightroom" />
-            </div>
+            <SkillsContainer skills={skills} />
             <h2 className="text-4xl">Featured Pieces</h2>
-            <div className="flex justify-evenly items-center flex-wrap h-[750px] w-7.5/10 m-14 mt-5 p-5 shadow-2xl rounded-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-8 w-full max-w-7xl mt-5 shadow-2xl rounded-2xl">
                 <ArtImg
                     src="/images/photo/ny_skyline.jpg"
                     alt="New York Skyline"
@@ -41,8 +43,8 @@ function ArtSkills() {
                     text="Gainesville, FL"
                 />
             </div>
-            <div className="flex justify-center items-center gap-8">
-                <h3 className="text-xl">Want to see more?</h3>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
+                <h3 className="text-lg md:text-xl text-center">Want to see more?</h3>
                 <Button
                     style={{ border: "2px solid #B39DDB" }}
                     text={"Explore my Art Portfolio"}
