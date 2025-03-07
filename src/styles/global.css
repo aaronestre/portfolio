@@ -2,8 +2,8 @@
 
 :root {
     /* Text Colors */
-    --primary-font-color: #2c3e50; /* Dark Blue-Gray for readability */
-    --secondary-font-color: #687475; /* Muted Gray for subtext */
+    --primary-font-color: #fff; /* Dark Blue-Gray for readability */
+    --secondary-font-color: #c2c8c9; /* Muted Gray for subtext */
 
     /* Brand Colors */
     --swe-color: #ff7043; /* Vibrant Orange for SWE section */
@@ -11,10 +11,11 @@
 
     /* Accent & Highlights */
     --highlight-color: #f9a825; /* Bold Yellow for emphasis */
-    --button-color: #ff5722; /* Deeper Orange for CTA buttons */
-
+    
     /* Backgrounds */
     --background-color: #f4f4f4; /* Light Gray for main background */
+    --background-dark: #0b0b0b;
+    --background-semi-dark: #1a1a1a;
     --card-background: #ffffff; /* White for content cards */
     --border-color: #e0e0e0; /* Soft Gray for subtle separation */
 
@@ -25,3 +26,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
+html, body, #root {
+    height:100%;
+  }

@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const Skill = ({ src, alt, text }) => {
     return (
         <motion.div 
-            className="rounded-xl p-4 w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex flex-col justify-center items-center gap-2 shadow-lg"
+            className="rounded-xl p-4 w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex flex-col bg-(--background-semi-dark) justify-center items-center gap-2 shadow-lg"
             whileHover={{ scale: 1.1 }}
         >
             <img

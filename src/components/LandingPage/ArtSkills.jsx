@@ -21,7 +21,7 @@ function ArtSkills() {
             </h4>
             <SkillsContainer skills={skills} />
             <h2 className="text-3xl md:text-4xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-10 w-full max-w-7xl mt-5 shadow-2xl rounded-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-10 w-full max-w-7xl mt-5 bg-(--background-semi-dark) shadow-2xl rounded-2xl">
                 <ArtImg
                     src="/images/photo/ny_skyline.jpg"
                     alt="New York Skyline"
@@ -49,7 +49,7 @@ function ArtSkills() {
                     style={{ border: "2px solid #B39DDB" }}
                     text={"Explore my Art Portfolio"}
                     type="art"
-                    className="art text-(--art-color)"
+                    className="text-(--art-color)"
                     onClick={() => navigate("/art")}
                 />
             </div>

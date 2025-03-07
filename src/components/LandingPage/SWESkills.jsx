@@ -19,8 +19,8 @@ function SWESkills() {
                 Building scalable, efficient, and user-friendly applications
             </h4>
             <SkillsContainer skills={skills} />
-            <h2 className="text-3xl md:text-4xl mt-12 text-(--primary-font-color)">Featured Project</h2>
-            <div className="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-6 lg:gap-10 h-auto w-full md:w-4/5 mx-auto my-0 p-10 shadow-xl rounded-2xl">
+            <h2 className="text-3xl md:text-4xl mt-12 mb-6 text-(--primary-font-color)">Featured Project</h2>
+            <div className="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-6 lg:gap-10 h-auto w-full md:w-4/5 mx-auto my-0 p-10 shadow-xl rounded-2xl bg-(--background-semi-dark)">
                 <img
                     className="h-auto w-full sm:w-[80%] md:w-[70%] lg:w-[50%] rounded-xl"
                     src="/images/tagalong.png"
