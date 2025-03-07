@@ -27,8 +27,8 @@ export default function SWE() {
                         text="View my Resume"
                     />
                     <Button
-                        style={{ border: "2px solid #B39DDB" }}
-                        className="art text-(--art-color)"
+                        style={{ border: "2px solid #FF7043" }}
+                        className="swe text-(--swe-color)"
                         text="Explore my GitHub"
                     />
                 </div>
