@@ -21,7 +21,7 @@ function Hero() {
                 <p className="text-white text-sm font-semibold mt-[-5px]">
                     Based in Virginia
                 </p>
-                <h1 className="text-(--primary-font-color) text-4xl sm:text-6xl font-bold leading-tight whitespace-nowrap max-w-fit">
+                <h1 className="text-(--primary-font-color) text-4xl sm:text-6xl font-bold leading-tight whitespace-nowrap max-w-fit z-1">
                     Hello, my name's{" "}
                     <span className="text-(--swe-color)"> Aaron</span>.
                 </h1>
