@@ -15,7 +15,7 @@ export default function Button({ text, type, className = "", ...props }) {
     return (
         <>
             <motion.button
-                className={`box-content text-base p-3 rounded-xl w-max shadow-xl font-semibold bg-transparent ${className} text-white`}
+                className={`cursor-pointer box-content text-base p-3 rounded-xl w-max shadow-xl font-semibold bg-transparent ${className} text-white`}
                 whileHover={{ backgroundColor: getColor(), scale: 1.05, color: "rgb(255, 255, 255)" }}
                 whileTap={{ scale: 0.95 }}
                 {...props}

@@ -8,7 +8,7 @@ const IconButton = ({ icon, link, ...props }) => {
             rel="noopener noreferrer"
         >
             <motion.button
-                className="rounded-full p-3 bg-transparent border-2 border-white border-solid"
+                className="cursor-pointer rounded-full p-3 bg-transparent border-2 border-white border-solid"
                 whileHover={{
                     backgroundColor: "#1a1a1a",
                     scale: 1.15,
