@@ -2,7 +2,7 @@ import Skill from "../Skill";
 
 const SkillsContainer = ({skills}) => {
     return (
-        <div className="flex justify-center items-center flex-wrap gap-6 md:gap-8 mt-10 md:mt-14 w-full max-w-3xl m-14 mb-28">
+        <div className="flex flex-row flex-wrap gap-2 mx-auto my-5">
                 {skills.map((skill, key) => (
                     <Skill key={key} src={skill.src} alt={skill.alt} text={skill.text} />
                 ))}
