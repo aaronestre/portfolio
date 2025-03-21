@@ -7,10 +7,10 @@ function ArtSkills() {
     const navigate = useNavigate();
 
     const skills = [
-        { src: "/images/photoshop.png", alt: "Photoshop", text: "Photoshop" },
-        { src: "/images/premiere.png", alt: "Premiere Pro", text: "Premiere Pro" },
-        { src: "/images/ae.png", alt: "After Effects", text: "After Effects" },
-        { src: "/images/lightroom.png", alt: "Lightroom", text: "Lightroom" },
+        { src: "/images/skills/photoshop.png", alt: "Photoshop", text: "Photoshop" },
+        { src: "/images/skills/premiere.png", alt: "Premiere Pro", text: "Premiere Pro" },
+        { src: "/images/skills/ae.png", alt: "After Effects", text: "After Effects" },
+        { src: "/images/skills/lightroom.png", alt: "Lightroom", text: "Lightroom" },
     ]
 
     return (

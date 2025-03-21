@@ -1,14 +1,13 @@
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import SkillsContainer from "./SkillsContainer";
-import Skill from "../Skill";
 
 function SWESkills() {
     const navigate = useNavigate();
     const skills = [
-        { src: "/images/react.png", alt: "React", text: "React" },
-        { src: "/images/java.png", alt: "Java", text: "Java" },
-        { src: "/images/csharp.png", alt: "C#", text: "C#" },
+        { src: "/images/skills/react.png", alt: "React", text: "React" },
+        { src: "/images/skills/java.png", alt: "Java", text: "Java" },
+        { src: "/images/skills/csharp.png", alt: "C#", text: "C#" },
     ]
     return (
         <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="swe-overview">
@@ -18,7 +17,6 @@ function SWESkills() {
             </h4>
             
             <div className="w-full md:w-2/5 flex flex-col">
-                <h2 className="text-3xl md:text-4xl mt-50 mb-6 text-(--primary-font-color) text-left">Tech Stack</h2>
                 <div className="flex w-full">
                     <SkillsContainer skills={skills} />
                 </div>
