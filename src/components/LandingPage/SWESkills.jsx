@@ -8,6 +8,11 @@ function SWESkills() {
         { src: "/images/skills/react.png", alt: "React", text: "React" },
         { src: "/images/skills/java.png", alt: "Java", text: "Java" },
         { src: "/images/skills/csharp.png", alt: "C#", text: "C#" },
+        { src: "/images/skills/next.png", alt: "Next.js", text: "Next.js" },
+        { src: "/images/skills/tailwind.png", alt: "Tailwind", text: "Tailwind" },
+        { src: "/images/skills/git.png", alt: "Git", text: "Git" },
+        { src: "/images/skills/github.png", alt: "GitHub", text: "GitHub" },
+        { src: "/images/skills/supabase.png", alt: "Supabase", text: "Supabase" },
     ]
     return (
         <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="swe-overview">
@@ -21,7 +26,7 @@ function SWESkills() {
                     <SkillsContainer skills={skills} />
                 </div>
                 
-                <h2 className="text-3xl md:text-4xl mt-50 mb-6 text-(--primary-font-color) text-left">Featured Project</h2>
+                <h2 className="text-3xl md:text-4xl mt-30 mb-6 text-(--primary-font-color) text-left">Featured Project</h2>
             </div>
             
             <div className="flex flex-col lg:flex-row justify-center items-center flex-wrap gap-6 lg:gap-10 h-auto w-2/5 md:w-2/5 mx-auto my-0 p-10 shadow-xl rounded-2xl bg-(--background-semi-dark)">
