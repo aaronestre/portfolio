@@ -3,7 +3,7 @@
 :root {
     /* Text Colors */
     --primary-font-color: #fff; /* Dark Blue-Gray for readability */
-    --secondary-font-color: #c2c8c9; /* Muted Gray for subtext */
+    --secondary-font-color: #a8aeaf; /* Muted Gray for subtext */
 
     /* Brand Colors */
     --swe-color: #ff7043; /* Vibrant Orange for SWE section */
@@ -15,7 +15,7 @@
     /* Backgrounds */
     --background-color: #f4f4f4; /* Light Gray for main background */
     --background-dark: #161818;
-    --background-semi-dark: #1a1a1a;
+    --background-semi-dark: #2c2c2c;
     --card-background: #ffffff; /* White for content cards */
     --border-color: #e0e0e0; /* Soft Gray for subtle separation */
 

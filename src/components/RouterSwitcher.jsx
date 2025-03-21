@@ -4,6 +4,7 @@ import React from "react";
 import LandingPage from "../pages/LandingPage";
 import Art from "../pages/Art";
 import SWE from "../pages/SWE";
+import About from "../pages/About";
 
 export default function RouterSwitcher() {
     return (
@@ -12,6 +13,7 @@ export default function RouterSwitcher() {
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/swe" element={<SWE />} />
                 <Route path="/art" element={<Art />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </Router>
     );
