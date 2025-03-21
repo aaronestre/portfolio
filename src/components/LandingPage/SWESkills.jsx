@@ -19,7 +19,7 @@ function SWESkills() {
             
             <div className="w-full md:w-2/5 flex flex-col">
                 <h2 className="text-3xl md:text-4xl mt-50 mb-6 text-(--primary-font-color) text-left">Tech Stack</h2>
-                <div className="flex justify-center w-full">
+                <div className="flex w-full">
                     <SkillsContainer skills={skills} />
                 </div>
                 
