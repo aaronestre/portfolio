@@ -1,19 +1,12 @@
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import SkillsContainer from "./SkillsContainer";
+import { sweSkills } from "../../util/skillsData";
 
 function SWESkills() {
     const navigate = useNavigate();
-    const skills = [
-        { src: "/images/skills/react.png", alt: "React", text: "React" },
-        { src: "/images/skills/java.png", alt: "Java", text: "Java" },
-        { src: "/images/skills/csharp.png", alt: "C#", text: "C#" },
-        { src: "/images/skills/next.png", alt: "Next.js", text: "Next.js" },
-        { src: "/images/skills/tailwind.png", alt: "Tailwind", text: "Tailwind" },
-        { src: "/images/skills/git.png", alt: "Git", text: "Git" },
-        { src: "/images/skills/github.png", alt: "GitHub", text: "GitHub" },
-        { src: "/images/skills/supabase.png", alt: "Supabase", text: "Supabase" },
-    ]
+    const skills = sweSkills;
+    
     return (
         <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="swe-overview">
             <h1 className="text-4xl md:text-6xl text-(--swe-color) text-center">Software Engineering</h1>

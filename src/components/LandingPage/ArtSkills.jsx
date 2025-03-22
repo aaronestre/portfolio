@@ -2,16 +2,12 @@ import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 import SkillsContainer from "./SkillsContainer";
 import ArtImg from "../ArtImg";
+import { artSkills } from "../../util/skillsData";
 
 function ArtSkills() {
     const navigate = useNavigate();
 
-    const skills = [
-        { src: "/images/skills/photoshop.png", alt: "Photoshop", text: "Photoshop" },
-        { src: "/images/skills/premiere.png", alt: "Premiere Pro", text: "Premiere Pro" },
-        { src: "/images/skills/ae.png", alt: "After Effects", text: "After Effects" },
-        { src: "/images/skills/lightroom.png", alt: "Lightroom", text: "Lightroom" },
-    ]
+    const skills = artSkills;
 
     return (
         <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="art-overview">
