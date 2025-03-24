@@ -19,11 +19,12 @@ function SWESkills() {
             </h4>
             
             <div className="w-full full flex flex-col">
+                <h2 className="text-2xl md:text-2xl mt-20 mb-5 text-(--primary-font-color) text-left">Current Tech Stack</h2>
                 <div className="flex w-full">
                     <SkillsContainer skills={skills} />
                 </div>
                 
-                <h2 className="text-3xl md:text-4xl mt-30 mb-6 text-(--primary-font-color) text-left">Featured Projects</h2>
+                <h2 className="text-2xl md:text-2xl mt-30 mb-6 text-(--primary-font-color) text-left">Featured Projects</h2>
             </div>
             
             <ProjectsContainer projects={projects} />

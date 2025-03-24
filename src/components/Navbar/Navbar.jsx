@@ -16,7 +16,7 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="backdrop-blur-md sticky top-2 mx-auto h-13 flex justify-center items-center rounded-2xl min-w-[410px] font-(family-name:--secondary-font) w-3/10 shadow-2xl z-2 border-2 border-gray-400/50 border-solid">
+        <div className="backdrop-blur-md sticky top-2 mx-auto h-13 flex justify-center items-center rounded-2xl min-w-[410px] font-(family-name:--secondary-font) w-1/5 shadow-2xl z-2 border-2 border-gray-400/50 border-solid">
             <nav className="w-full flex justify-center items-center gap-4">
                 <NavLink href="/" text="Home" />
                 <NavDropdown links={sweLinks} text="SWE"/>
