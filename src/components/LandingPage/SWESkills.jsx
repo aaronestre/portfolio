@@ -12,13 +12,13 @@ function SWESkills() {
     const projects = sweProjects;
 
     return (
-        <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="swe-overview">
+        <div className="flex flex-col justify-center items-center w-1/3 mx-auto my-20 md:my-40" id="swe-overview">
             <h1 className="text-4xl md:text-6xl text-(--swe-color) text-center">Software Engineering</h1>
             <h4 className="text-lg md:text-xl text-center text-(--primary-font-color)">
                 Building scalable, efficient, and user-friendly applications
             </h4>
             
-            <div className="w-full md:w-2/5 flex flex-col">
+            <div className="w-full full flex flex-col">
                 <div className="flex w-full">
                     <SkillsContainer skills={skills} />
                 </div>
