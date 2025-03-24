@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 
 import Hero from "../components/LandingPage/Hero";
-import Contact from "../components/LandingPage/Contact";
 import SWESkills from "../components/LandingPage/SWESkills";
 import ArtSkills from "../components/LandingPage/ArtSkills";
 import ButtonGroup from "../components/ButtonGroup";
@@ -22,7 +21,6 @@ export default function LandingPage() {
             <Hero />
             <ButtonGroup buttons={buttons} handleChangeSelection={handleChangeSelection} selectedSection={selectedSection}/>
             {selectedSection === "SWE" ? <SWESkills /> : <ArtSkills />}
-            <Contact />
         </>
     );
 }
