@@ -23,7 +23,7 @@ export default function Button({
 	return (
 		<>
 			<motion.button
-				className={`cursor-pointer box-content text-${fontSize} p-${padding} rounded-${rounded} w-max shadow-xl font-semibold bg-transparent ${className} text-white`}
+				className={`cursor-pointer box-content text-${fontSize} p-${padding} rounded-${rounded} shadow-xl font-semibold bg-transparent ${className} text-white`}
 				whileHover={{
 					backgroundColor: getColor(),
 					scale: 1.05,
