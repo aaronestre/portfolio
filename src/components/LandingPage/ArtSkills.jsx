@@ -10,9 +10,9 @@ function ArtSkills() {
     const skills = artSkills;
 
     return (
-        <div className="flex flex-col justify-center items-center w-11/12 mx-auto my-20 md:my-40" id="art-overview">
+        <div className="flex flex-col justify-center items-center w-full mx-auto my-20 md:my-40" id="art-overview">
             <h1 className="text-4xl md:text-6xl text-(--art-color) text-center">Art Creative</h1>
-            <h4 className="text-lg md:text-xl text-center text-(--primary-font-color)">
+            <h4 className="text-lg md:text-xl text-center text-(--primary-font-color) mb-10">
                 Creating inspiring and engaging pieces of art
             </h4>
             <SkillsContainer skills={skills} />
