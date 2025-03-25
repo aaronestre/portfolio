@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import SkillsContainer from "./SkillsContainer";
 import ArtImg from "../ArtImg";
 import { artSkills } from "../../util/skillsData";
+import { photos } from "../../util/artData";
+
 
 function ArtSkills() {
     const navigate = useNavigate();
@@ -18,28 +20,10 @@ function ArtSkills() {
             <hr className="border-b border-white w-full mb-5"/>
             <SkillsContainer skills={skills} />
             <h2 className="text-2xl md:text-3xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-10 w-full max-w-7xl mt-5 bg-(--background-semi-dark) shadow-2xl rounded-2xl">
-                <ArtImg
-                    src="/images/photo/ny_skyline.jpg"
-                    alt="New York Skyline"
-                    text="New York City, NY"
-                />
-                <ArtImg
-                    src="/images/photo/bird.jpg"
-                    alt="Bird"
-                    text="Gainesville, FL"
-                />
-                <ArtImg
-                    src="/images/photo/golf_winter.jpg"
-                    alt="Golf Course during Winter"
-                    text="Gainesville, VA"
-                />
-                <ArtImg
-                    src="/images/photo/sunflower.png"
-                    alt="Sunflower"
-                    text="Gainesville, FL"
-                />
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-10 w-full mt-5 bg-(--background-semi-dark) shadow-2xl rounded-2xl">
+                       {photos.map((photo, index) => 
+                       <ArtImg src={photo.src} alt={photo.alt} text={photo.text} key={index}/>)}
+				    </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
                 <h3 className="text-lg md:text-xl text-center text-(--primary-font-color)">Want to see more?</h3>
                 <Button

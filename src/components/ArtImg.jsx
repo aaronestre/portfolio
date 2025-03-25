@@ -1,23 +1,28 @@
 import { motion } from "motion/react";
-const ArtImg = ({ text, ...props }) => {
+
+const ArtImg = ({ text, aspect = 3 / 2, scale = 1, size = "w-full", maxWidth = "max-w-full", ...props }) => {
 
     const variants = {
-        hover: {opacity: 1},
-    }
+        hover: { opacity: 1 },
+    };
 
     const imgVariant = {
-        hover: {filter: "brightness(0.4)"},
-    }
+        hover: { filter: "brightness(0.4)" },
+    };
 
     return (
-        <motion.div whileHover="hover" className="art-container relative">
+        <motion.div
+            whileHover="hover"
+            className="art-container relative flex justify-center items-center"
+        >
             <motion.img
-                className="block w-full h-auto aspect-[3/2] rounded-lg"
+                className={`${size} ${maxWidth} block h-auto rounded-lg`}
+                style={{ aspectRatio: aspect, transform: `scale(${scale})` }}
                 {...props}
                 variants={imgVariant}
             />
             <motion.p
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-base sm:text-lg md:text-xl text-center opacity-0"
+                className="absolute text-white text-base sm:text-lg md:text-xl text-center opacity-0"
                 variants={variants}
             >
                 {text}
