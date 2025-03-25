@@ -16,7 +16,7 @@ const NavDropdown = ({ links, text }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <button className="p-2 text-(--primary-font-color)">{text}</button>
+            <button className="p-2 text-(--primary-font-color) md:text-base text-sm">{text}</button>
             {isDropdownOpen && (
                 <DropdownMenu
                     className="dropdown-menu"

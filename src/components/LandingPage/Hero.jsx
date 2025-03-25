@@ -21,11 +21,11 @@ function Hero() {
                 <p className="text-white text-sm font-semibold mt-[-5px]">
                     Based in Virginia
                 </p>
-                <h1 className="text-(--primary-font-color) text-4xl sm:text-6xl font-bold leading-tight whitespace-nowrap max-w-fit z-1">
+                <h1 className="text-(--primary-font-color) text-2xl sm:text-6xl font-bold leading-tight whitespace-nowrap max-w-fit z-1">
                     Hello, my name's{" "}
                     <span className="text-(--swe-color)"> Aaron</span>.
                 </h1>
-                <h2 className="text-(--primary-font-color) text-2xl sm:text-3xl">
+                <h2 className="text-(--primary-font-color) text-xl sm:text-3xl">
                     I'm a <span className="text-(--swe-color)">full stack</span>{" "}
                     developer and{" "}
                     <span className="text-(--art-color)">art</span> creative.
