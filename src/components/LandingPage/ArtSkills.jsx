@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import SkillsContainer from "./SkillsContainer";
 import ArtImg from "../ArtImg";
 import { artSkills } from "../../util/skillsData";
-import { photos } from "../../util/artData";
+import { featuredPhotos } from "../../util/artData";
 
 
 function ArtSkills() {
@@ -21,7 +21,7 @@ function ArtSkills() {
             <SkillsContainer skills={skills} />
             <h2 className="text-2xl md:text-3xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-10 w-full mt-5 bg-(--background-semi-dark) shadow-2xl rounded-2xl">
-                       {photos.map((photo, index) => 
+                       {featuredPhotos.map((photo, index) => 
                        <ArtImg src={photo.src} alt={photo.alt} text={photo.text} key={index}/>)}
 				    </div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
