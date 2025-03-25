@@ -10,13 +10,14 @@ function ArtSkills() {
     const skills = artSkills;
 
     return (
-        <div className="flex flex-col justify-center items-center w-full mx-auto my-20 md:my-40" id="art-overview">
-            <h1 className="text-4xl md:text-6xl text-(--art-color) text-center">Art Creative</h1>
-            <h4 className="text-lg md:text-xl text-center text-(--primary-font-color) mb-10">
+        <div className="flex flex-col justify-center items-center w-[300px] sm:w-[400px] md:w-[500px] lg:w-[800px] mx-auto my-20 md:my-40" id="art-overview">
+            <h1 className="text-4xl md:text-5xl text-(--art-color) text-center">Art Creative</h1>
+            <h4 className="text-lg md:text-xl text-center text-(--primary-font-color) mt-3 mb-5">
                 Creating inspiring and engaging pieces of art
             </h4>
+            <hr className="border-b border-white w-full mb-5"/>
             <SkillsContainer skills={skills} />
-            <h2 className="text-3xl md:text-4xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
+            <h2 className="text-2xl md:text-3xl mt-12 text-(--primary-font-color)">Featured Pieces</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-10 w-full max-w-7xl mt-5 bg-(--background-semi-dark) shadow-2xl rounded-2xl">
                 <ArtImg
                     src="/images/photo/ny_skyline.jpg"
