@@ -4,7 +4,7 @@ import { navigationLinks, socialLinks } from "../util/footerLinksData";
 export default function FloatingFooter() {
 
 	return (
-		<div className="bg-(--background-semi-dark) p-4 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px] mx-auto grid grid-cols-2 mb-10 rounded-md h-auto">
+		<div className="bg-(--background-semi-dark) p-4 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[800px] mx-auto grid grid-cols-2 mb-10 rounded-md h-auto">
 			<div className="flex flex-col justify-end">
 				<h1 className="text-(--primary-font-color) font-bold text-2xl md:text-5xl">
 					Aaron<br/>
