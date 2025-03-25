@@ -31,7 +31,7 @@ function Hero() {
                     <span className="text-(--art-color)">art</span> creative.
                 </h2>
             </div>
-            <div className="m-4 flex flex-col sm:flex-row justify-center items-center gap-4 w-full px-4">
+            <div className="m-4 flex sm:flex-row justify-center items-center gap-4 w-full px-4">
                 <IconButton
                     icon={github}
                     link="https://github.com/aaronestre"
