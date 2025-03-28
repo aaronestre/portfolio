@@ -1,8 +1,9 @@
 import Button from "./Button";
+import {motion} from "motion/react";
 
 export default function Project({ project }) {
     return (
-        <div className="flex flex-col w-full max-w-full shadow-xl rounded-2xl bg-(--background-semi-dark) overflow-hidden">
+        <motion.div whileHover={{y:-10}} transition={{duration: 0.2}}  className="z-1 flex flex-col w-full max-w-full shadow-xl rounded-2xl bg-(--background-semi-dark) overflow-hidden">
             <img
                 className="w-full h-auto object-cover rounded-t-xl"
                 src={project.image}
@@ -61,6 +62,6 @@ export default function Project({ project }) {
                     )}
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
