@@ -1,5 +1,5 @@
 import React from "react";
-import { sweProjects } from "../util/projectsData";
+import { allProjects } from "../util/projectsData";
 import ProjectsContainer from "../components/ProjectsContainer";
 
 
@@ -13,7 +13,7 @@ export default function SWE() {
                 <hr className="border-b border-white w-full mb-5" />
             </div>
             <div className="z-1 w-[300px] sm:w-[400px] md:w-[500px] lg:w-[800px] flex flex-col justify-center items-center mx-auto mt-10">
-                <ProjectsContainer projects={sweProjects} />
+                <ProjectsContainer projects={allProjects} />
             </div>
             
         </div>
