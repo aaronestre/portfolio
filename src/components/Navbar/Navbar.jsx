@@ -22,7 +22,6 @@ export default function Navbar() {
                 <NavDropdown links={sweLinks} text="SWE"/>
                 <NavDropdown links={artLinks} text="Art"/>
                 <NavLink href="/about" text="About" />
-                <NavLink href="/#contact" text="Contact" />
             </nav>
         </div>
     );
